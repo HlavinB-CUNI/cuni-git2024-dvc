@@ -1,3 +1,32 @@
 {
-
-}
+    "dvc_commands": [
+      {
+        "command": "dvc init",
+        "description": "Initialize DVC in the project."
+      },
+      {
+        "command": "dvc remote add -d myremote s3://mybucket/dvcstore",
+        "description": "Add a default remote storage on S3."
+      },
+      {
+        "command": "dvc add data/raw/data.csv",
+        "description": "Track the raw data file with DVC."
+      },
+      {
+        "command": "dvc repro",
+        "description": "Reproduce the pipeline."
+      },
+      {
+        "command": "dvc push",
+        "description": "Push tracked data and cache to remote storage."
+      },
+      {
+        "command": "dvc pull",
+        "description": "Pull tracked data from remote storage."
+      },
+      {
+        "command": "dvc status",
+        "description": "Check if the workspace is in sync with DVC files and the cache."
+      }
+    ]
+  }
